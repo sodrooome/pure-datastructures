@@ -1,4 +1,7 @@
 site_name: pure-datastructures
 theme: readthedocs
 
+repo_name: 'sodrooome/pure-datastructures'
+repo_url: 'https://github.com/sodrooome/pure-datastructures'
+
 

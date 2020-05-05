@@ -1,6 +1,27 @@
 # Pure-datastructures
 
-![Build](https://github.com/sodrooome/pure-datastructures/workflows/Publish%20docs%20via%20GitHub%20Pages/badge.svg)
+<p align="center">
+  <a href="https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg">
+    <img src="https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg">
+  </a>
+
+  <a href="https://badge.fury.io/py/pure-datastructures.svg)](https://badge.fury.io/py/pure-datastructures">
+    <img src="https://badge.fury.io/py/pure-datastructures.svg">
+  </a>
+
+  <a href="#">
+    <img src="https://img.shields.io/pypi/dm/pure-datastructures">
+  </a>
+
+  <a href="#">
+    <img src="https://img.shields.io/pypi/pyversions/pure-datastructures">
+  </a>
+
+  <a href="#">
+    <img src="https://img.shields.io/pypi/status/pure-datastructures">
+  </a>
+</p>
+
 
 Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.
 

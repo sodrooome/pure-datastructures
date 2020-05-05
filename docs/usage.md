@@ -8,9 +8,9 @@ import ds
 scenario = ds.OrderedList()
 
 # basic insertion
-scenario.add(70)
-scenario.add(13)
-scenario.add(-3)
+scenario.procedure_push(70)
+scenario.procedure_push(13)
+scenario.procedure_push(-3)
 
 # calculate size of array with `size()`
 # return length of array
@@ -18,7 +18,7 @@ print(scenario.size())
 
 # searching value through array with `search_obj()`
 # return False if value is not founds
-print(scenario.search_obj(5))
+print(scenario.procedure_search_obj(5))
 ```
 
 Another example using basic `Stack()`, and string as input-type :
@@ -39,3 +39,5 @@ print(scenario.procedure_size())
 # return value of element
 print(scenario.procedure_peek())
 ```
+
+For more complete example will be written very soon.

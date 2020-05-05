@@ -1,9 +1,15 @@
-site_name: pure-datastructures
+site_name: Pure Data Structures
 theme: readthedocs
 nav:
   - Usage: usage.md
   - Drawbacks : drawbacks.md
   - Releases History : releases.md
+  - References : references.md
+  - Development : development.md
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
 
 repo_name: 'sodrooome/pure-datastructures'
 repo_url: 'https://github.com/sodrooome/pure-datastructures'

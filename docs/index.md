@@ -1,6 +1,6 @@
 # Pure-datastructures
 
-Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function. Any performance is not measured enough (or you can benchmark yourself using cProfile). Even though, i'm pretty confident this scenarios are using Big-O-Notation references (average - worst scenario for time complexity).
+Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.
 
 ## List of Data Structures
 
@@ -24,10 +24,10 @@ If you facing a trouble while perform installation, make sure :
 
 - You already activated virtual environment (**Recommended**)
 - Using root access (**Not Recommended**)
-- Or, using verbosity `flag --user`
+- Or, using verbosity flag `--user`
 
 ## Ensure version
 
-To ensure the package is installed, try to import using `python` in command line, and prompt an `import ds` in command-line.
+To ensure the package is installed and checking current version, try to import using `python` in command line, and prompt an `import ds` in command-line for checking whether the package is successfully installed or not, to check version for now it can only be done using `pip freeze` or `pip list`. 
 
 

@@ -1,17 +1,33 @@
-# Welcome to MkDocs
+# Pure-datastructures
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function. Any performance is not measured enough (or you can benchmark yourself using cProfile). Even though, i'm pretty confident this scenarios are using Big-O-Notation references (average - worst scenario for time complexity).
 
-## Commands
+## List of Data Structures
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- Stack
+- Stack with Linked List
+- Queue
+- List
+- List with Ordered List
 
-## Project layout
+## Installation
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+For python 2.7 :
+
+`pip install pure-datastructures`
+
+For python 3.6 or higher :
+
+`pip3 install pure-datastructures`
+
+If you facing a trouble while perform installation, make sure :
+
+- You already activated virtual environment (**Recommended**)
+- Using root access (**Not Recommended**)
+- Or, using verbosity `flag --user`
+
+## Ensure version
+
+To ensure the package is installed, try to import using `python` in command line, and prompt an `import ds` in command-line.
+
+

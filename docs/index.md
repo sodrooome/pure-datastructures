@@ -1,26 +1,6 @@
 # Pure-datastructures
 
-<p align="center">
-  <a href="https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg">
-    <img src="https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg">
-  </a>
-
-  <a href="https://badge.fury.io/py/pure-datastructures.svg)](https://badge.fury.io/py/pure-datastructures">
-    <img src="https://badge.fury.io/py/pure-datastructures.svg">
-  </a>
-
-  <a href="#">
-    <img src="https://img.shields.io/pypi/dm/pure-datastructures">
-  </a>
-
-  <a href="#">
-    <img src="https://img.shields.io/pypi/pyversions/pure-datastructures">
-  </a>
-
-  <a href="#">
-    <img src="https://img.shields.io/pypi/status/pure-datastructures">
-  </a>
-</p>
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pure-datastructures) ![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg)
 
 
 Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.
@@ -48,6 +28,16 @@ If you facing a trouble while perform installation, make sure :
 - You already activated virtual environment (**Recommended**)
 - Using root access (**Not Recommended**)
 - Or, using verbosity flag `--user`
+
+## Test
+
+Using unittest for test the data structures, for running all test :
+
+`python3 -m unittest tests`
+
+For running specific test (example you want test Stack) :
+
+`python3 -m unittest tests.test_stack`
 
 ## Ensuring version
 

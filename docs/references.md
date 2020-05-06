@@ -1,5 +1,7 @@
 # API References
 
+All about concise API references manual for `pure-datastructures`, with the detail about classes, function, return types or arguments.
+
 ### *`procedure_search_obj(**kwargs)`*
 
 - Search any value / elements through Stack, List and Queue. return `False` if there's a value otherwise return `True`.
@@ -24,3 +26,11 @@
 ### *`is_empty()`*
 
 - Check whether an array does have a value or not. In Stack case, will return `False` if stack is empty and return `True` if not empty, for List and Queue, will not return any value except `None`.
+
+### *`procedure_enqueue(**kwargs)`*
+
+- Push new object or value to queue.
+
+### *`procedure_dequeue()`*
+
+- Remove first object or value from queue.

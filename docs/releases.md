@@ -4,18 +4,24 @@ Using semantic versioning and based on PEP 440 (version identification and depen
 
 ## Changelog
 
-### version 0.1.0
+### Pure-datastructures 0.1.0 (2020-05-05)
+Highlights :
+
 - Reorganize all data structures
 - Adding `UnorderedList` and fixed iteration in `LinkedList`
 - `size()` functions are changing into `expand_size()` - using **0(n)** to perform calculate size of array
 
-### version 0.0.8
-- Basic searching for all data structures
-- Adding basic queueing
+### Pure-datastructures 0.0.8 (2020-04-05)
+Highlights :
 
-### version 0.0.5rc 
+- Adding `search_obj()` for List.
+- Adding basic queueing (perform `enqueue`, `dequeue` and `is_empty`)
+
+### Pure-datastructures 0.0.5rc (2020-04-05)
+Highlights :
+
 - Pre-release for beta update
 - Remove mock test in every references
 
-### version 0.0.1
-- Initial commit for all data structures
+### Pure-datastructures 0.0.1 (2020-04-05)
+- Pre-release for pure-datastructures

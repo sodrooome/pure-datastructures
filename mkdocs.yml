@@ -3,14 +3,20 @@ theme: readthedocs
 nav:
   - Usage: usage.md
   - Drawbacks : drawbacks.md
-  - Releases History : releases.md
+  - Release Note : releases.md
   - References : references.md
   - Development : development.md
   - Purposes : purposes.md
 
+extra:
+    version: 1.0
+
+use_directory_urls: true
+
 markdown_extensions:
     - toc:
-        permalink: "#"
+        permalink: True
+        separator: "_"
 
 repo_name: 'sodrooome/pure-datastructures'
 repo_url: 'https://github.com/sodrooome/pure-datastructures'

@@ -40,4 +40,19 @@ print(scenario.procedure_size())
 print(scenario.procedure_peek())
 ```
 
+An example using Queue :
+
+```python
+import ds
+
+scenario = ds.Queue()
+
+# check an array
+# return None if has no value
+scenario.is_empty()
+
+# push new value to queue
+scenario.procedure_enqueue(3)
+```
+
 For more complete example will be written very soon.

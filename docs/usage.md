@@ -40,6 +40,20 @@ print(scenario.procedure_expand_size())
 print(scenario.procedure_peek())
 ```
 
+Or you can iterate Stack, to push a new value using for-loop. This is also applies to all data structures :
+
+```python
+import ds
+
+scenario = ds.Stack()
+
+# iterate push new value to stack
+for x in range(1,4):
+	scenario.procedure_push(x)
+
+print(scenario.procedure_peek())
+```
+
 An example using Queue :
 
 ```python

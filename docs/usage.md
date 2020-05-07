@@ -14,7 +14,7 @@ scenario.procedure_push(-3)
 
 # calculate size of array with `size()`
 # return length of array
-print(scenario.size())
+print(scenario.procedure_expand_size())
 
 # searching value through array with `search_obj()`
 # return False if value is not founds
@@ -33,7 +33,7 @@ scenario.procedure_push('json')
 
 # the function same as the above
 # return length of array
-print(scenario.procedure_size())
+print(scenario.procedure_expand_size())
 
 # check the top-most element of stack
 # return value of element
@@ -49,7 +49,7 @@ scenario = ds.Queue()
 
 # check an array
 # return None if has no value
-scenario.is_empty()
+print(scenario.is_empty())
 
 # push new value to queue
 scenario.procedure_enqueue(3)

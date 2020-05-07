@@ -4,11 +4,23 @@ Using semantic versioning and based on PEP 440 (version identification and depen
 
 ## Changelog
 
+### Pure-datastructures 0.1.1 (2020-07-05)
+Highlights :
+
+- Fixed `is_empty()` only return `False`
+- Fixed `unittest` not discover of all test
+- Adding `is_full()` in Stack and Queue
+- Adding `CircularQueue()`
+- Adding `IndexError` in Queue
+- Depth coverage about throwing exceptions in Queue and Stack
+
+
 ### Pure-datastructures 0.1.0 (2020-05-05)
 Highlights :
 
+- Fixed iteration in `LinkedList`
 - Reorganize all data structures
-- Adding `UnorderedList` and fixed iteration in `LinkedList`
+- Adding `UnorderedList`
 - `size()` functions are changing into `expand_size()` - using **0(n)** to perform calculate size of array
 
 ### Pure-datastructures 0.0.8 (2020-04-05)

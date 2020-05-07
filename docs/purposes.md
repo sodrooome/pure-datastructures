@@ -6,7 +6,7 @@ The purpose of making this package is, basically only for documentation in imple
 
 So what's **the difference** between this package with other packages or built-in functions?
 
-This package comes to minimal and clean implementation, thus, we do not use the help of built-in functions such as `pop`, `insert`, or other methods or decorators, but from the beginning this package will be written  in pure python code, instead using `pop` or something like that, we want to write an abstract base class then inherit it into some function, or make it a decorator (although i'm not really sure for implementing abstract classes, do you need a module or just make it yourself).
+This package comes to minimal and clean implementation, thus, we do not use the help of built-in functions such as `pop`, `insert`, or other methods or decorators, and also modules (python comes it handy with data structures module) but from the beginning this package will be written  in pure python code, instead using `pop` or something like that, we want to write an abstract base class then inherit it into some function, or make it a decorator (although i'm not really sure for implementing abstract classes, do you need a module or just make it yourself).
 
 The biggest difference in this package i think is that, in the meantime, this package can be override and anyone who uses can customize it for themselves while learning and understanding how data structures can work from scratch, and thats why this documentation exists.
 

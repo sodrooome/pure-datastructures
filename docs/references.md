@@ -82,34 +82,6 @@ def procedure_peek(self):
 	return self.array[self.top]
 ```
 
-### `is_empty()`
-
-- Check whether an array does have a value or not. In Stack and Queue case, will return `False` if stack/queue is empty and return `True` if not empty.
-- For List, will not return any value except `None`.
-- References :
-
-```python
-def is_empty(self):
-    if self.top < 1:
-        return True
-    else:
-        return False
-```
-
-### `is_full()`
-
-- Check whether an array does have a value or not. Only available in Stack and Queue, throwing exceptions work out same as like `is_empty()`.
-- References `is_full()` in Queue :
-
-```python
-def is_full(self):
-    if self.rear == len(self.size) - 1:
-        return True
-    else:
-        return False
-```
-
-
 ### `procedure_enqueue(**kwargs)`
 
 - Push new object or value to queue.
@@ -143,4 +115,31 @@ def procedure_dequeue(self):
         self.front = self.front.next
     self.size = self.size - 1
     return value
+```
+
+### `is_empty()`
+
+- Check whether an array does have a value or not. In Stack and Queue case, will return `False` if stack/queue is empty and return `True` if not empty.
+- For List, will not return any value except `None`.
+- References :
+
+```python
+def is_empty(self):
+    if self.top < 1:
+        return True
+    else:
+        return False
+```
+
+### `is_full()`
+
+- Check whether an array does have a value or not. Only available in Stack and Queue, throwing exceptions work out same as like `is_empty()`.
+- References `is_full()` in Queue :
+
+```python
+def is_full(self):
+    if self.rear == len(self.size) - 1:
+        return True
+    else:
+        return False
 ```

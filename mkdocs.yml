@@ -1,4 +1,5 @@
 site_name: Pure Data Structures
+site_description: Pure Data Structures documentation
 theme: readthedocs
 nav:
   - Usage: usage.md
@@ -17,8 +18,13 @@ markdown_extensions:
     - toc:
         permalink: True
         separator: "_"
+        baselevel: 2
+
+plugins:
+    - search
 
 repo_name: 'sodrooome/pure-datastructures'
 repo_url: 'https://github.com/sodrooome/pure-datastructures'
+edit_uri: ""
 
 

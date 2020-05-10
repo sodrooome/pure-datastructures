@@ -1,6 +1,6 @@
 import unittest
 
-from ds.ds_queue import Queue, CircularQueue
+from ds.ds_queue import Queue, CircularQueue, BalancedParenthesis
 
 class TestQueue(unittest.TestCase):
 	def test_queue(self):

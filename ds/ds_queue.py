@@ -107,3 +107,17 @@ class CircularQueue:
         if self.is_empty():
             raise IndexError("Queue is empty, you either must be popped or not set a value.")
         return self.front.value
+
+class BalancedParenthesis:
+
+    def is_balanced(parenthesis):
+        """Use Queue class to checking valid parenthesis."""
+        queue = Queue(len(parenthesis))
+        for ps in parenthesis:
+            if ps == "(":
+                queue.procedure_enqueue(ps)
+            elif ps == ")":
+                if queue.is_empty():
+                    return "Queue is unbalanced."
+                queue.procedure_dequeue()
+        return queue.is_empty()

@@ -123,3 +123,17 @@ class LinkedList:
 		if self.is_empty():
 			raise IndexError("Stack is empty, you either must be popped or not set a value.")
 		return self.head.data
+
+class BalancedParenthesis:
+
+    def is_balanced(parenthesis):
+        """Use Stack class to checking valid parenthesis."""
+        stack = Stack(len(parenthesis))
+        for ps in parenthesis:
+            if ps == "(":
+                stack.procedure_push(ps)
+            elif ps == ")":
+                if stack.is_empty():
+                    return "Stack is unbalanced."
+                stack.procedure_pop()
+        return stack.is_empty()

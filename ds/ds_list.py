@@ -5,10 +5,12 @@ class Node:
         Initialize List node. params:
         :data: data -> Any
         :next: frame or None
+        :value: selected value
         """
         super().__init__()
         self.data = data
         self.next = None
+        #self.value = value
 
     def getData(self):
         return self.data
@@ -79,6 +81,14 @@ class OrderedList:
             current = current.getNext()
         return count
 
+    def procedure_delete_node(self):
+        """Function to delete node with specific value."""
+        node = Node()
+        if node is None or node.next is None:
+            raise ValueError
+        node.value = node.next.value
+        node.next = node.next.next
+
 class UnorderedList:
 
     def __init__(self):
@@ -113,3 +123,10 @@ class UnorderedList:
             else:
                 current = current.getNext()
         return found
+
+    def procedure_delete_node(self):
+        node = Node()
+        if node is not None or node.next is None:
+            raise ValueError
+        node.value = node.next.value
+        node.next = node.next.next

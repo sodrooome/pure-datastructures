@@ -4,6 +4,13 @@ Using semantic versioning and based on PEP 440 (version identification and depen
 
 ## Changelog
 
+### Pure-datastructures 0.1.2 (2020-10-05)
+Highlights :
+
+- Dropped support for python 2.7 or below
+- Adding `is_balanced()` in Stack and Queue (read more on [references](https://sodrooome.github.io/pure-datastructures/references/))
+- Providing delete node on List using `procedure_delete_node()`
+
 ### Pure-datastructures 0.1.1 (2020-07-05)
 Highlights :
 

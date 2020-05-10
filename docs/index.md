@@ -15,11 +15,7 @@ Data structures package for python, written in pure python code, not dependent o
 
 ## Installation
 
-For python 2.7 :
-
-`pip install pure-datastructures`
-
-For python 3.6 or higher :
+This package only work in python 3.6 or higher, you can install it with :
 
 `pip3 install pure-datastructures`
 

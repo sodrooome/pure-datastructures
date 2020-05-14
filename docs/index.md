@@ -19,12 +19,6 @@ This package only work in python 3.6 or higher, you can install it with :
 
 `pip3 install pure-datastructures`
 
-If you facing a trouble while perform installation, make sure :
-
-- You already activated virtual environment (**Recommended**)
-- Using root access (**Not Recommended**)
-- Or, using verbosity flag `--user`
-
 ## Test
 
 Using unittest for test the data structures, for running all test :

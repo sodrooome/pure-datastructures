@@ -4,6 +4,11 @@ Using semantic versioning and based on PEP 440 (version identification and depen
 
 ## Changelog
 
+### Pure-datastructures 0.1.3 (2020-14-05)
+Highlights :
+
+- Adding custom exception for Queue and Stack
+
 ### Pure-datastructures 0.1.2 (2020-10-05)
 Highlights :
 
@@ -36,10 +41,9 @@ Highlights :
 - Adding `search_obj()` for List.
 - Adding basic queueing (perform `enqueue`, `dequeue` and `is_empty`)
 
-### Pure-datastructures 0.0.5rc (2020-04-05)
+### Pure-datastructures 0.0.5 (2020-04-05)
 Highlights :
 
-- Pre-release for beta update
 - Remove mock test in every references
 
 ### Pure-datastructures 0.0.1 (2020-04-05)

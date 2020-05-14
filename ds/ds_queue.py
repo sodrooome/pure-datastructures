@@ -1,3 +1,5 @@
+from exception import DsIndexError, DsPeekIndexError
+
 class Queue:
 
     def __init__(self, maxsize=10):
@@ -45,7 +47,7 @@ class Queue:
     def procedure_dequeue(self):
         """Remove first object from queue."""
         if self.is_empty():
-            raise IndexError("Queue is empty.")
+            raise DsIndexError()
         item = self.size[self.front]
         self.size[self.front] = None
         self.front = self.front + 1
@@ -58,7 +60,7 @@ class Queue:
 
     def procedure_peek(self):
         if self.is_empty():
-            raise IndexError("Queue is empty.")
+            raise DsIndexError()
         return self.size[self.front]
 
 class Node:
@@ -93,7 +95,7 @@ class CircularQueue:
 
     def procedure_dequeue(self):
         if self.is_empty():
-            raise IndexError("Queue is empty, set a value first.")
+            raise DsIndexError()
         value = self.front.value
         if self.front is self.rear:
             self.front = None
@@ -105,7 +107,7 @@ class CircularQueue:
 
     def procedure_peek(self):
         if self.is_empty():
-            raise IndexError("Queue is empty, you either must be popped or not set a value.")
+            raise DsPeekIndexError()
         return self.front.value
 
 class BalancedParenthesis:

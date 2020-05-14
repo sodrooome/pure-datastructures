@@ -1,3 +1,5 @@
+from exception import DsIndexError, DsPeekIndexError
+
 class Stack:
 
 	def __init__(self, maxsize=10):
@@ -50,7 +52,7 @@ class Stack:
 
 	def procedure_pop(self):
 		if self.is_empty():
-			raise IndexError("Stack is empty.")
+			raise DsIndexError()
 		item = self.array[self.top]
 		self.top = self.top - 1
 		return item
@@ -58,7 +60,7 @@ class Stack:
 	def procedure_peek(self):
 		"""Check the top-most element of the stack."""
 		if self.is_empty():
-			raise IndexError("Stack is empty.")
+			raise DsIndexError()
 		return self.array[self.top]
 
 	def procedure_expand_size(self):
@@ -113,7 +115,7 @@ class LinkedList:
 
 	def procedure_pop(self):
 		if self.is_empty():
-			raise IndexError("Stack is empty, set a value first.")
+			raise DsIndexError()
 		data = self.head.data
 		self.head = self.head.next
 		self.top = self.top - 1
@@ -121,7 +123,7 @@ class LinkedList:
 
 	def procedure_peek(self):
 		if self.is_empty():
-			raise IndexError("Stack is empty, you either must be popped or not set a value.")
+			raise DsPeekIndexError()
 		return self.head.data
 
 class BalancedParenthesis:

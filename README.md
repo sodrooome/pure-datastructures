@@ -1,6 +1,8 @@
 # Pure Data Structures
 
-Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function. Any performance is not measured enough (or you can benchmark yourself using `cProfile`). Even though, i'm pretty confident this scenarios are using Big-O-Notation references (average - worst scenario for time complexity).
+![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg)
+
+Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.
 
 ## List of Data Structures
 
@@ -12,23 +14,13 @@ Data structures package for python, written in pure python code, not dependent o
 
 ## Installation
 
-For python 2.7 :
-
-`pip install pure-datastructures`
-
-For python 3.6 or higher :
+This package only work in python 3.6 or higher :
 
 `pip3 install pure-datastructures`
 
-If you facing a trouble while perform installation, make sure :
-
-- You already activated virtual environment (**Recommended**)
-- Using root access (**Not Recommended**)
-- Or, using verbosity flag `--user`
-
 ## Usage
 
-Quick example using Ordered List :
+A quick introduction using `pure-datastructures`. Using `OrderedList()` references and integer input-type :
 
 ```python
 import ds
@@ -36,18 +28,20 @@ import ds
 scenario = ds.OrderedList()
 
 # basic insertion
-scenario.add(70)
-scenario.add(13)
-scenario.add(-3)
+scenario.procedure_push(70)
+scenario.procedure_push(13)
+scenario.procedure_push(-3)
 
 # calculate size of array with `size()`
-print(scenario.size())
+# return length of array
+print(scenario.procedure_expand_size())
 
 # searching value through array with `search_obj()`
-print(scenario.search_obj(5))
+# return False if value is not founds
+print(scenario.procedure_search_obj(5))
 ```
 
 ## Documentation
 
-For documentation read in [pure-datastructures doc](https://sodrooome.github.io/pure-datastructures/)
+For documentation read in [pure-datastructures](https://sodrooome.github.io/pure-datastructures/).
 

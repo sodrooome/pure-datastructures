@@ -15,6 +15,9 @@ class TestStack(unittest.TestCase):
 		# test for remove value from stack
 		self.assertEqual(3, stack.procedure_pop())
 
+		# test stack if is empty
+		self.assertFalse(stack.is_empty())
+
 	def test_linkedlist(self):
 		stack = LinkedList()
 		stack.procedure_push(3)

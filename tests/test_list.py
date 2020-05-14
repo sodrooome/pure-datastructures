@@ -24,5 +24,8 @@ class ListTestCase(unittest.TestCase):
         # test for searching a object
         self.assertEqual(True, olist.procedure_search_obj(2))
 
+        # expand size an array
+        self.assertEqual(3, olist.procedure_expand_size())
+
 if __name__ == "__main__":
     unittest.main()

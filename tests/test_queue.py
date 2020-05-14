@@ -15,17 +15,20 @@ class TestQueue(unittest.TestCase):
 		# remove top most of value
 		self.assertEqual(1, queue.procedure_dequeue())
 
+		# expand size of queue
+		self.assertEqual(10, queue.procedure_expand_size())
+
 	def test_circularqueue(self):
 		queue = CircularQueue()
-		queue.procedure_enqueue(1)
-		queue.procedure_enqueue(2)
 		queue.procedure_enqueue(3)
+		queue.procedure_enqueue(2)
+		queue.procedure_enqueue(1)
 
 		# test for peek the top-most-element
-		self.assertEqual(1, queue.procedure_peek())
+		self.assertEqual(3, queue.procedure_peek())
 
 		# remove top most of value
-		self.assertEqual(1, queue.procedure_dequeue())
+		self.assertEqual(3, queue.procedure_dequeue())
 
 if __name__ == "__main__":
 	unittest.main()

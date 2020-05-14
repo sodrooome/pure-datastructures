@@ -8,6 +8,7 @@ nav:
   - References : references.md
   - Development : development.md
   - Purposes : purposes.md
+  - Contribution : contribute.md
 
 extra:
     version: 1.0

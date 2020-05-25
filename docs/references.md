@@ -49,7 +49,7 @@ All about concise API references manual for `pure-datastructures`, with the deta
 
 - Throwing exception, one of the basic and common error in this package. This will raise if inputted value is attempt to access the outside that index of list. Error message :
 
-    ```sh
+    ```
     Stack / List / Queue is empty, set a value first.
     ```
 
@@ -57,7 +57,7 @@ All about concise API references manual for `pure-datastructures`, with the deta
 
 - Throwing exception, the difference with `DsIndexError()`, it will raise if `procedure_peek()` process didn't find any value from that index of list. Error message :
 
-    ```sh
+    ```
     Stack / List / Queue is empty, you either must be popped or not set a value.
     ```
 
@@ -65,6 +65,6 @@ All about concise API references manual for `pure-datastructures`, with the deta
 
 - Throwing exception, that indicates the data-type or value is not correct. Error message :
 
-    ```sh
+    ```
     Value error, either your argument or inputted value is not correct.
     ```

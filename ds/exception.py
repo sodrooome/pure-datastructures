@@ -12,3 +12,9 @@ class DsPeekIndexError(ThrowException):
 
     def __init__(self):
         super().__init__("Stack / List / Queue is empty, you either must be popped or not set a value.")
+
+class DsValueError(ThrowException):
+    """Exception for indicates that data-type or value is not correct."""
+
+    def __init__(self):
+        super().__init__("Value error, either your argument or inputted value is not correct.")

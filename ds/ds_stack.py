@@ -1,4 +1,5 @@
 from exception import DsIndexError, DsPeekIndexError
+from decorators import benchmark
 
 class Stack:
 
@@ -9,7 +10,6 @@ class Stack:
 		:maxsize: size of array
 		:top: integer
 		"""
-		super().__init__()
 		self.items = []
 		self.top = 0
 		self.array = [None] * maxsize
@@ -126,9 +126,27 @@ class LinkedList:
 			raise DsPeekIndexError()
 		return self.head.data
 
+# Got some error, list shouldn't be have an object
+class OrderedStack:
+
+	def __init__(self):
+		self.items = []
+
+	def is_empty(self):
+		return self.items == []
+
+	def procedure_push(self, item):
+		self.items.procedure_push(item)
+
+	def procedure_pop(self):
+		stack = Stack()
+		if self.is_empty():
+			raise DsIndexError()
+		return self.items.stack.procedure_pop()
+
 class BalancedParenthesis:
 
-    def is_balanced(parenthesis):
+    def is_balanced(self, parenthesis):
         """Use Stack class to checking valid parenthesis."""
         stack = Stack(len(parenthesis))
         for ps in parenthesis:

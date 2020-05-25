@@ -1,3 +1,5 @@
+from exception import DsValueError, DsIndexError
+
 class Node:
 
     def __init__(self, data):
@@ -7,9 +9,9 @@ class Node:
         :next: frame or None
         :value: selected value
         """
-        super().__init__()
         self.data = data
         self.next = None
+        self.previous = None
         #self.value = value
 
     def getData(self):
@@ -17,6 +19,9 @@ class Node:
 
     def getNext(self):
         return self.next
+
+    def getPrev(self):
+        return self.previous
 
     def setData(self, new_data):
         self.data = new_data
@@ -85,7 +90,7 @@ class OrderedList:
         """Function to delete node with specific value."""
         node = Node()
         if node is None or node.next is None:
-            raise ValueError
+            raise DsValueError()
         node.value = node.next.value
         node.next = node.next.next
 
@@ -127,6 +132,70 @@ class UnorderedList:
     def procedure_delete_node(self):
         node = Node()
         if node is not None or node.next is None:
-            raise ValueError
+            raise DsValueError()
         node.value = node.next.value
         node.next = node.next.next
+
+# It's working but not returning a value
+# instead, it will return None
+class DoubleLinkedList:
+
+    def __init__(self):
+        self.head = None
+
+    def procedure_insert(self, data):
+        """Inserting items if list is empty."""
+        if self.head is None:
+            node = Node(data)
+            self.head = node
+        else:
+            raise DsIndexError()
+
+    def procedure_insert_start(self, data):
+        """Inserting items in beginning of list."""
+        if self.head is None:
+            node = Node(data)
+            self.head = node
+            return
+        node = Node(data)
+        node.next = self.head
+        self.head.previous = node
+        self.head = node
+
+    def procedure_insert_end(self, data):
+        """Inserting items in last of list."""
+        if self.head is None:
+            node = Node(data)
+            self.head = node
+            return
+        n = self.node
+        while n.getNext() is not None:
+            n = n.getNext()
+        node = Node(data)
+        n.next = node
+        node.previous = n
+
+    def procedure_delete_node(self):
+        """Delete items at the beginning of list."""
+        if self.head is None:
+            raise DsIndexError()
+            return
+        if self.head.getNext() is None:
+            self.head = None
+            return
+        self.head = self.head.next
+        self.previous = None
+
+    def procedure_search_obj(self, item):
+        current = self.head
+        found = False
+        while current != None and not found:
+            if current.getData() == item:
+                found = True
+            else:
+                current = current.getNext()
+        return found
+
+
+
+    

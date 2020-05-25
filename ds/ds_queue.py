@@ -10,7 +10,6 @@ class Queue:
         :rear: integers and null
         :value: integers and null
         """
-        super().__init__()
         self.front = 0
         self.rear = 0
         self.value = 0
@@ -72,7 +71,7 @@ class Node:
 class CircularQueue:
 
     def __init__(self):
-        super().__init__()
+        # super().__init__()
         self.front = None
         self.rear = None
         self.size = 0
@@ -110,9 +109,62 @@ class CircularQueue:
             raise DsPeekIndexError()
         return self.front.value
 
+# Got some error
+# Next todo -> fixed bugs in procedure_insert
+class PriorityQueue:
+
+    def __init__(self, i=10):
+        """
+        Initialize param for heapify.
+        :largest: largest among root -> None
+        :left: left node
+        :right: right node
+        """
+        self.largest = None
+        if self.largest is None:
+            self.largest = i
+        self.left = 2 * i + 1
+        self.right = 2 * i + 2
+
+    def heap(self, n, i, arr):
+        """Using Max-heap finding for priority Queue."""
+
+        if left < n and arr[i] < arr[left]:
+            largest = left
+
+        if right < n and arr[i] < arr[right]:
+            largest = right
+
+        if largest != i:
+            arr[i], arr[largest] = arr[largest], arr[i]
+            return heap(arr, n, largest)
+
+    def procedure_insert(self):
+        size = Queue()
+        if size == 0:
+            Queue.procedure_enqueue()
+        else:
+            Queue.procedure_enqueue()
+            for i in range((size // 2) - 1, -1, -1):
+                heap(Queue, size, i)
+
+    def procedure_delete(self):
+        size = Queue()
+        i = 0
+        for i in range(0, size):
+            if size == Queue[i]:
+                break
+            
+        Queue[i], Queue[size - 1] = Queue[size - 1], Queue[i]
+
+        Queue.procedure_dequeue(size - 1)
+
+        for i in range((len(Queue) // 2) -1, -1, -1):
+            heap(Queue, len(Queue), i)
+
 class BalancedParenthesis:
 
-    def is_balanced(parenthesis):
+    def is_balanced(self, parenthesis):
         """Use Queue class to checking valid parenthesis."""
         queue = Queue(len(parenthesis))
         for ps in parenthesis:

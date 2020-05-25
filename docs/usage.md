@@ -40,7 +40,7 @@ print(scenario.procedure_expand_size())
 print(scenario.procedure_peek())
 ```
 
-Or you can iterate Stack, to push a new value using for-loop. This is also applies to all data structures :
+Or you can iterate `Stack`, to push a new value using for-loop. This is also applies to all data structures :
 
 ```python
 import ds
@@ -54,7 +54,7 @@ for x in range(1,4):
 print(scenario.procedure_peek())
 ```
 
-An example using Queue :
+An example using `Queue` :
 
 ```python
 import ds
@@ -67,6 +67,47 @@ print(scenario.is_empty())
 
 # push new value to queue
 scenario.procedure_enqueue(3)
+```
+
+An example using `Doublelinkedlist` :
+
+```python
+import ds
+
+scenario = ds.DoubleLinkedList()
+
+# push new object at the beginning list
+scenario.procedure_insert_list(1)
+
+# push new object at the end of list
+scenario.procedure_insert_end(5)
+
+print(scenario.procedure_search_obj(-7))
+
+# delete object at the beginning of list
+print(scenario.procedure_delete_obj())
+```
+
+For benchmarking code, you can override `benchmark` decorators in your program :
+
+```python
+import ds
+from decorators import benchmark # add new line
+
+scenario = ds.Stack()
+
+# benchmarking only be done
+# if using function
+# add decorators here
+@benchmark
+def test_foo():
+	for x in range(1,10):
+		scenario.procedure_push(x)
+
+# return the result
+# of function that we call
+if __name__ == '__main__':
+	test_foo()
 ```
 
 For more complete example will be written very soon.

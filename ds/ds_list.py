@@ -1,3 +1,4 @@
+from typing import Optional
 from exception import DsValueError, DsIndexError
 
 class Node:
@@ -10,8 +11,8 @@ class Node:
         :value: selected value
         """
         self.data = data
-        self.next = None
-        self.previous = None
+        self.next: Optional[str] = None
+        self.previous: Optional[str] = None
         #self.value = value
 
     def getData(self):
@@ -32,7 +33,7 @@ class Node:
 class OrderedList:
 
     def __init__(self):
-        self.head = None
+        self.head: Optional[str] = None
 
     def procedure_search_obj(self, item):
         """Searching value through list."""
@@ -97,7 +98,7 @@ class OrderedList:
 class UnorderedList:
 
     def __init__(self):
-        self.head = None
+        self.head: Optional[str] = None
 
     def is_empty(self):
         return self.head == None
@@ -141,7 +142,7 @@ class UnorderedList:
 class DoubleLinkedList:
 
     def __init__(self):
-        self.head = None
+        self.head: Optional[str] = None
 
     def procedure_insert(self, data):
         """Inserting items if list is empty."""
@@ -198,4 +199,3 @@ class DoubleLinkedList:
 
 
 
-    

@@ -1,17 +1,17 @@
+from typing import Optional, List
 from exception import DsIndexError, DsPeekIndexError
-from decorators import benchmark
 
 class Stack:
 
-	def __init__(self, maxsize=10):
+	def __init__(self, maxsize: int=10) -> int:
 		"""
 		Initialize stack. params:
 		:items: array and empty
 		:maxsize: size of array
 		:top: integer
 		"""
-		self.items = []
-		self.top = 0
+		self.items: List[int] = []
+		self.top: int = 0
 		self.array = [None] * maxsize
 
 	def __iter__(self):
@@ -75,7 +75,7 @@ class Node:
 	"""
 	def __init__(self, data):
 		self.data = data
-		self.next = None
+		self.next: Optional[str] = None
 
 	def __repr__(self):
 		return self.data
@@ -83,9 +83,9 @@ class Node:
 class LinkedList:
 
 	def __init__(self):
-		super().__init__()
-		self.head = None
-		self.top = 0
+		# super().__init__()
+		self.head: Optional[str] = None
+		self.top: int = 0
 
 	def __iter__(self):
 		probe = self.head
@@ -130,7 +130,7 @@ class LinkedList:
 class OrderedStack:
 
 	def __init__(self):
-		self.items = []
+		self.items: List[int] = []
 
 	def is_empty(self):
 		return self.items == []

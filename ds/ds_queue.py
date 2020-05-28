@@ -1,8 +1,9 @@
+from typing import Optional
 from exception import DsIndexError, DsPeekIndexError
 
 class Queue:
 
-    def __init__(self, maxsize=10):
+    def __init__(self, maxsize: int=10) -> int:
         """
         Initialize Queue. params:
         :size: Array and empty
@@ -10,9 +11,9 @@ class Queue:
         :rear: integers and null
         :value: integers and null
         """
-        self.front = 0
-        self.rear = 0
-        self.value = 0
+        self.front: int = 0
+        self.rear: int = 0
+        self.value: int = 0
         self.size = [None] * maxsize
 
     def __bool__(self):
@@ -66,7 +67,7 @@ class Node:
 
     def __init__(self, value):
         self.value = value
-        self.next = None
+        self.next: Optional[str] = None
 
 class CircularQueue:
 
@@ -113,7 +114,7 @@ class CircularQueue:
 # Next todo -> fixed bugs in procedure_insert
 class PriorityQueue:
 
-    def __init__(self, i=10):
+    def __init__(self, i: int=10) -> int:
         """
         Initialize param for heapify.
         :largest: largest among root -> None
@@ -154,7 +155,7 @@ class PriorityQueue:
         for i in range(0, size):
             if size == Queue[i]:
                 break
-            
+
         Queue[i], Queue[size - 1] = Queue[size - 1], Queue[i]
 
         Queue.procedure_dequeue(size - 1)

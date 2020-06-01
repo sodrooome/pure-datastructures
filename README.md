@@ -1,6 +1,6 @@
 # Pure Data Structures
 
-![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg)
+![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg) ![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![PyPI](https://img.shields.io/pypi/v/pure-datastructures) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5baa29c0e53c4897acffcc3d99e02ccb)](https://www.codacy.com/manual/sodrooome/pure-datastructures?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sodrooome/pure-datastructures&amp;utm_campaign=Badge_Grade)
 
 Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.
 

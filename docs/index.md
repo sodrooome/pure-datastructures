@@ -1,6 +1,6 @@
 # Pure-datastructures
 
-![PyPI - Downloads](https://img.shields.io/pypi/dm/pure-datastructures) ![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg)
+[![Downloads](https://pepy.tech/badge/pure-datastructures)](https://pepy.tech/project/pure-datastructures) ![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg)
 
 
 Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.

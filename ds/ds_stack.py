@@ -12,7 +12,7 @@ class Stack:
 		"""
 		self.items: List[int] = []
 		self.top: int = 0
-		self.array = [None] * maxsize
+		self.array: List[int] = [] * maxsize
 
 	def __iter__(self):
 		probe = self.top

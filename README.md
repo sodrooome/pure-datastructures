@@ -1,5 +1,7 @@
 # Pure Data Structures
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/efda428000da4707a0dc67542887b997)](https://app.codacy.com/manual/sodrooome/pure-datastructures?utm_source=github.com&utm_medium=referral&utm_content=sodrooome/pure-datastructures&utm_campaign=Badge_Grade_Dashboard)
+
 ![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg)
 
 Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.

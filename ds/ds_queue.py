@@ -1,9 +1,9 @@
 from typing import Optional
-from exception import DsIndexError, DsPeekIndexError
+from .exception import DsIndexError, DsPeekIndexError
+
 
 class Queue:
-
-    def __init__(self, maxsize: int=10) -> int:
+    def __init__(self, maxsize: int = 10) -> int:
         """
         Initialize Queue. params:
         :size: Array and empty
@@ -63,14 +63,14 @@ class Queue:
             raise DsIndexError()
         return self.size[self.front]
 
-class Node:
 
+class Node:
     def __init__(self, value):
         self.value = value
         self.next: Optional[str] = None
 
-class CircularQueue:
 
+class CircularQueue:
     def __init__(self):
         # super().__init__()
         self.front = None
@@ -110,11 +110,11 @@ class CircularQueue:
             raise DsPeekIndexError()
         return self.front.value
 
+
 # Got some error
 # Next todo -> fixed bugs in procedure_insert
 class PriorityQueue:
-
-    def __init__(self, i: int=10) -> int:
+    def __init__(self, i: int = 10) -> int:
         """
         Initialize param for heapify.
         :largest: largest among root -> None
@@ -130,15 +130,15 @@ class PriorityQueue:
     def heap(self, n, i, arr):
         """Using Max-heap finding for priority Queue."""
 
-        if left < n and arr[i] < arr[left]:
-            largest = left
+        if self.left < n and arr[i] < arr[self.left]:
+            largest = self.left
 
-        if right < n and arr[i] < arr[right]:
-            largest = right
+        if self.right < n and arr[i] < arr[self.right]:
+            largest = self.right
 
         if largest != i:
             arr[i], arr[largest] = arr[largest], arr[i]
-            return heap(arr, n, largest)
+            return self.heap(arr, n, largest)
 
     def procedure_insert(self):
         size = Queue()
@@ -147,7 +147,7 @@ class PriorityQueue:
         else:
             Queue.procedure_enqueue()
             for i in range((size // 2) - 1, -1, -1):
-                heap(Queue, size, i)
+                self.heap(Queue, size, i)
 
     def procedure_delete(self):
         size = Queue()
@@ -160,19 +160,5 @@ class PriorityQueue:
 
         Queue.procedure_dequeue(size - 1)
 
-        for i in range((len(Queue) // 2) -1, -1, -1):
-            heap(Queue, len(Queue), i)
-
-class BalancedParenthesis:
-
-    def is_balanced(self, parenthesis):
-        """Use Queue class to checking valid parenthesis."""
-        queue = Queue(len(parenthesis))
-        for ps in parenthesis:
-            if ps == "(":
-                queue.procedure_enqueue(ps)
-            elif ps == ")":
-                if queue.is_empty():
-                    return "Queue is unbalanced."
-                queue.procedure_dequeue()
-        return queue.is_empty()
+        for i in range((len(Queue) // 2) - 1, -1, -1):
+            self.heap(Queue, len(Queue), i)

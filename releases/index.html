@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Release Note - Pure Data Structures</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Release Note";
+    var mkdocs_page_input_path = "releases.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Pure Data Structures</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../usage/">Usage</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../drawbacks/">Drawbacks</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Release Note</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#release_history">Release history</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#changelog">Changelog</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../references/">References</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../development/">Development</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../purposes/">Purposes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contribute/">Contribution</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Pure Data Structures</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Release Note</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="release_history">Release history<a class="headerlink" href="#release_history" title="Permanent link">&para;</a></h2>
+<p>Using semantic versioning and based on PEP 440 (version identification and dependency specification). All the release history (binary / numbers only) can be found in <a href="https://pypi.org/project/pure-datastructures/">PyPi changelog</a></p>
+<h3 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h3>
+<h4 id="pure-datastructures_020_2021-29--05">Pure-datastructures 0.2.0 (2021-29--05)<a class="headerlink" href="#pure-datastructures_020_2021-29--05" title="Permanent link">&para;</a></h4>
+<p>Highlights :</p>
+<ul>
+<li>Remove <code>BalancedParentheses</code> method</li>
+<li>Better adjustment for typing annotations and parameter declaration</li>
+<li>Simplification several methods in <code>List</code> method</li>
+</ul>
+<p>Issues :</p>
+<ul>
+<li>Inserting new object in <code>DoubleLinkedList</code> raise an exception even though already filled the value</li>
+<li>Index out of range issue in <code>Stack</code> assignment</li>
+<li>All built-in APIs for <code>PriorityQueue</code> not working at all</li>
+</ul>
+<h4 id="pure-datastructures_014_2020-25-05">Pure-datastructures 0.1.4 (2020-25-05)<a class="headerlink" href="#pure-datastructures_014_2020-25-05" title="Permanent link">&para;</a></h4>
+<p>Highlights :</p>
+<ul>
+<li>Adding <code>benchmark</code> decorators for measure code performance</li>
+<li>Adding <code>DoubleLinkedList</code></li>
+<li>Adding custom exception for <code>List</code></li>
+<li>Fixed inserting new object in <code>Stack</code>, <code>Queue</code>, <code>CircularQueue</code> and <code>List</code></li>
+</ul>
+<p>Issues :</p>
+<ul>
+<li>Inserting new object in <code>PriorityQueue</code> not working</li>
+<li>Inserting new object in <code>OrderedStack</code> will return empty list, this shouldn't be have an object or list</li>
+</ul>
+<h4 id="pure-datastructures_013_2020-14-05">Pure-datastructures 0.1.3 (2020-14-05)<a class="headerlink" href="#pure-datastructures_013_2020-14-05" title="Permanent link">&para;</a></h4>
+<p>Highlights :</p>
+<ul>
+<li>Adding custom exception for Queue and Stack</li>
+</ul>
+<h4 id="pure-datastructures_012_2020-10-05">Pure-datastructures 0.1.2 (2020-10-05)<a class="headerlink" href="#pure-datastructures_012_2020-10-05" title="Permanent link">&para;</a></h4>
+<p>Highlights :</p>
+<ul>
+<li>Dropped support for python 2.7 or below</li>
+<li>Adding <code>is_balanced()</code> in <code>Stack</code> and <code>Queue</code></li>
+<li>Providing delete node on <code>List</code> using <code>procedure_delete_node()</code></li>
+</ul>
+<h4 id="pure-datastructures_011_2020-07-05">Pure-datastructures 0.1.1 (2020-07-05)<a class="headerlink" href="#pure-datastructures_011_2020-07-05" title="Permanent link">&para;</a></h4>
+<p>Highlights :</p>
+<ul>
+<li>Fixed <code>is_empty()</code> only return <code>False</code></li>
+<li>Fixed <code>unittest</code> not discover of all test</li>
+<li>Adding <code>is_full()</code> in <code>Stack</code> and <code>Queue</code></li>
+<li>Adding <code>CircularQueue()</code></li>
+<li>Adding <code>IndexError</code> in <code>Queue</code></li>
+<li>Depth coverage about throwing exceptions in <code>Queue</code> and <code>Stack</code></li>
+</ul>
+<h4 id="pure-datastructures_010_2020-05-05">Pure-datastructures 0.1.0 (2020-05-05)<a class="headerlink" href="#pure-datastructures_010_2020-05-05" title="Permanent link">&para;</a></h4>
+<p>Highlights :</p>
+<ul>
+<li>Fixed iteration in <code>LinkedList</code></li>
+<li>Reorganize all data structures</li>
+<li>Adding <code>UnorderedList</code></li>
+<li><code>size()</code> functions are changing into <code>expand_size()</code></li>
+</ul>
+<h4 id="pure-datastructures_008_2020-04-05">Pure-datastructures 0.0.8 (2020-04-05)<a class="headerlink" href="#pure-datastructures_008_2020-04-05" title="Permanent link">&para;</a></h4>
+<p>Highlights :</p>
+<ul>
+<li>Adding <code>search_obj()</code> for <code>List</code>.</li>
+<li>Adding basic queueing (perform <code>enqueue</code>, <code>dequeue</code> and <code>is_empty</code>)</li>
+</ul>
+<h4 id="pure-datastructures_005_2020-04-05">Pure-datastructures 0.0.5 (2020-04-05)<a class="headerlink" href="#pure-datastructures_005_2020-04-05" title="Permanent link">&para;</a></h4>
+<p>Highlights :</p>
+<ul>
+<li>Remove mock test in every references</li>
+</ul>
+<h4 id="pure-datastructures_001_2020-04-05">Pure-datastructures 0.0.1 (2020-04-05)<a class="headerlink" href="#pure-datastructures_001_2020-04-05" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Pre-release for pure-datastructures</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../references/" class="btn btn-neutral float-right" title="References">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../drawbacks/" class="btn btn-neutral" title="Drawbacks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../drawbacks/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../references/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

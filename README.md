@@ -1,6 +1,6 @@
 # Pure Data Structures
 
-![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg) ![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![PyPI](https://img.shields.io/pypi/v/pure-datastructures) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5baa29c0e53c4897acffcc3d99e02ccb)](https://www.codacy.com/manual/sodrooome/pure-datastructures?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sodrooome/pure-datastructures&amp;utm_campaign=Badge_Grade)
+![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg) ![Downloads](https://pepy.tech/badge/pure-datastructures) ![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![PyPI](https://img.shields.io/pypi/v/pure-datastructures)
 
 Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.
 
@@ -14,13 +14,13 @@ Data structures package for python, written in pure python code, not dependent o
 
 ## Installation
 
-This package only work in python 3.6 or higher :
+You can install this package with command :
 
-`pip3 install pure-datastructures`
+`pip install pure-datastructures`
 
 ## Usage
 
-A quick introduction using `pure-datastructures`. Using `OrderedList()` references and integer input-type :
+A quick introduction using `pure-datastructures`. Using `OrderedList()` built-in method :
 
 ```python
 import ds

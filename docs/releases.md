@@ -1,8 +1,21 @@
 # Release history
 
-Using semantic versioning and based on PEP 440 (version identification and dependency specification). All of release history (binary / numbers only) can be found in [PyPi changelog](https://pypi.org/project/pure-datastructures/)
+Using semantic versioning and based on PEP 440 (version identification and dependency specification). All the release history (binary / numbers only) can be found in [PyPi changelog](https://pypi.org/project/pure-datastructures/)
 
 ## Changelog
+
+### Pure-datastructures 0.2.0 (2021-29--05)
+Highlights :
+
+- Remove `BalancedParentheses` method
+- Better adjustment for typing annotations and parameter declaration
+- Simplification several methods in `List` method
+
+Issues :
+
+- Inserting new object in `DoubleLinkedList` raise an exception even though already filled the value
+- Index out of range issue in `Stack` assignment
+- All built-in APIs for `PriorityQueue` not working at all
 
 ### Pure-datastructures 0.1.4 (2020-25-05)
 Highlights :

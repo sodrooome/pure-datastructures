@@ -2,7 +2,8 @@ import unittest
 
 from ds.ds_list import OrderedList, UnorderedList, DoubleLinkedList
 
-class ListTestCase(unittest.TestCase): 
+
+class ListTestCase(unittest.TestCase):
     def test_ordered_list(self):
         olist = OrderedList()
         olist.procedure_push(1)
@@ -38,6 +39,7 @@ class ListTestCase(unittest.TestCase):
 
         # test for searching an object
         self.assertEqual(True, olist.procedure_search_obj(1))
+
 
 if __name__ == "__main__":
     unittest.main()

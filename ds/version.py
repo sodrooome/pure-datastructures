@@ -1,4 +1,4 @@
-__version__ = '0.1.4'
+__version__ = "0.2.0"
 
 
 def get_version():
@@ -8,4 +8,4 @@ def get_version():
 
 def get_version_as_tuple():
     # Get package version as tuple
-    return tuple(map(int, __version__.split('.')))
+    return tuple(map(int, __version__.split(".")))
